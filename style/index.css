@@ -53,6 +53,32 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 0;
+    color: #EEEE;
+    font-size: 32px;
+    transform: translateY(-110px);
+    font-size: 30px;
+    animation: up-down;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 #heroBanner h2 {
@@ -77,13 +103,8 @@ nav a:hover {
 #aboutMe p {
     font-size: 18px;
     color: #EEEE;
-    width: 50%;
+    width: 75%;
     text-align: center;
     margin: 25px auto;
     letter-spacing: 0.5px;
-}
-
-#gameSection {
-    height: 750px;
-    background-color: #1A1B24;
 }
